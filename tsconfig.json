@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "lib": [
       "dom",
       "dom.iterable",
@@ -20,7 +20,14 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
+  "files": [
+    "src/api/**/*.ts",
+    "src/api/*.ts"
+  ],
   "include": [
     "src"
+  ],
+  "references": [
+    {"path": "./src/api"}
   ]
 }

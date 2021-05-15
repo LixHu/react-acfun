@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './page/index';
 import reportWebVitals from './reportWebVitals';
-// import apiHelper from "../api";
-const apiHelper = '';
+import apiHelper from "./api";
+
 ReactDOM.render(
   <React.StrictMode>
     <App api={apiHelper} />

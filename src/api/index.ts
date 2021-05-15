@@ -5,11 +5,10 @@ import Api from "./api";
 let apiUrl = '/'
 const headers = {};
 class apiHelper {
-    public user: User;
-    public api: Api;
+    private user: User;
     constructor() {
-        this.api = new Api({ api: apiUrl, header: headers});
-        this.user = new User(this.api);
+        const api = new Api({ api: apiUrl, header: headers});
+        this.user = new User(api);
     }
 }
 
