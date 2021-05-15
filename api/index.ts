@@ -4,7 +4,7 @@ import User from "./User";
 import Api from "./api";
 let apiUrl = '/'
 const headers = {};
-export default class apiHelper {
+class apiHelper {
     public user: User;
     public api: Api;
     constructor() {
@@ -12,3 +12,5 @@ export default class apiHelper {
         this.user = new User(this.api);
     }
 }
+
+export default apiHelper

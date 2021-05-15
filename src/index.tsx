@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './page/index';
 import reportWebVitals from './reportWebVitals';
-import Api from "../api/api";
-
+// import apiHelper from "../api";
+const apiHelper = '';
 ReactDOM.render(
   <React.StrictMode>
-    <App api={Api} />
+    <App api={apiHelper} />
   </React.StrictMode>,
   document.getElementById('root')
 );
