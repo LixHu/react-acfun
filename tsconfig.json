@@ -20,14 +20,7 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "files": [
-    "src/api/**/*.ts",
-    "src/api/*.ts"
-  ],
   "include": [
     "src"
   ],
-  "references": [
-    {"path": "./src/api"}
-  ]
 }
