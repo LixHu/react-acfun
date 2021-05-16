@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Route, Router, Link } from 'react-router-ts'
+
 import './index.css';
-import App from './page/index';
+import App from './page/Index';
 import reportWebVitals from './reportWebVitals';
 import apiHelper from "./api";
 
+
+
 ReactDOM.render(
   <React.StrictMode>
-    <App api={apiHelper} />
+      <Router>
+          <Route path="/" component={ App }  />
+      </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
